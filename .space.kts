@@ -12,8 +12,8 @@ job("Build and publish") {
 
                 // get current build run number
                 val runNumber = api.executionNumber()
-                content = ChatMessage.Text("Job 'Build and publish' #$runNumber failed")
-                api.space().chats.messages.sendMessage(channel = channel, content = content)
+                val content2 = ChatMessage.Text("Job 'Build and publish' #$runNumber failed")
+                api.space().chats.messages.sendMessage(channel = channel, content = content2)
             }
         }
     }
