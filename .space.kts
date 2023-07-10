@@ -29,6 +29,7 @@ job("Build and publish") {
                     title = "Job 'Build and publish' #$runNumber failed",
                     description = "${ex.message}",
                     status = openStatusId
+                )
             }
         }
     }
