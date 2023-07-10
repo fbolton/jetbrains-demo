@@ -1,5 +1,5 @@
 job("Build and publish") {
-    container(displayName = "Build and notify", image = "gradle:7.2-jre11") {
+    container(displayName = "Build and notify", image = "gradle:7.2.0-jdk11") {
         kotlinScript { api ->
             val channel = ChannelIdentifier.Channel(ChatChannel.FromName("developers"))
             try {
