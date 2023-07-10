@@ -9,6 +9,8 @@ job("Build and publish") {
             } catch (ex: Exception) {
                 val content = ChatMessage.Text("Build failed")
                 api.space().chats.messages.sendMessage(channel = channel, content = content)
+                val errMsg = ChatMessage.Text("${ex.message}")
+                api.space().chats.messages.sendMessage(channel = channel, content = content)
             }
         }
     }
