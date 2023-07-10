@@ -3,7 +3,7 @@ job("Build and publish") {
         kotlinScript { api ->
             val channel = ChannelIdentifier.Channel(ChatChannel.FromName("developers"))
             try {
-                api.gradlew("build --stacktrace")
+                api.gradlew("build")
                 val content = ChatMessage.Text("Build succeeded")
                 api.space().chats.messages.sendMessage(channel = channel, content = content)
             } catch (ex: Exception) {
