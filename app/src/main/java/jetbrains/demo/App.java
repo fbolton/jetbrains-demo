@@ -3,6 +3,7 @@
  */
 package jetbrains.demo;
 
+// Added a comment to this class
 public class App {
     public String getGreeting() {
         return "Hello World!";
