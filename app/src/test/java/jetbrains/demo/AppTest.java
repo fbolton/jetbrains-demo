@@ -6,6 +6,7 @@ package jetbrains.demo;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+// Add a comment to the test as an experiment
 public class AppTest {
     @Test public void appHasAGreeting() {
         App classUnderTest = new App();
