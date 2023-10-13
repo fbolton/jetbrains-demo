@@ -5,7 +5,6 @@ package jetbrains.demo;
 
 // Added a comment to this class
 // Add another comment to see updates in TC
-// Yet another comment for testing
 public class App {
     public String getGreeting() {
         return "Hello World!";
