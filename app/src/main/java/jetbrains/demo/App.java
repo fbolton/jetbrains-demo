@@ -4,6 +4,7 @@
 package jetbrains.demo;
 
 // Add a comment to the App class
+// Adding an additional comment to the App class
 public class App {
     public String getGreeting() {
         return "Hello World!";
